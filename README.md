@@ -15,11 +15,11 @@ cd teamgenik_pub_samples
 npm install
 ```
 
-3. Build CSS
+3. Start server
 
 ```
-# just generate CSS
-npx tailwindcss -i ./tailwind.css -o ./dist/tailwind.css
-# for dev
-npx tailwindcss -i ./tailwind.css -o ./dist/tailwind.css --watch
+# site name should be a directory name under the sites directory
+npx tgweb-server [site name]
 ```
+
+then server is starting at localhost:3000
