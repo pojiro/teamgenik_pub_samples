@@ -24,54 +24,33 @@ title: kenko
         <tg-insert name="product-price">1000</tg-insert>
         <tg-insert name="product-stock">3</tg-insert>
       </tg-component>
-      <div class="mb-3 md:mb-0">
-        <div class="relative">
-          <a href="#">
-            <span
-              class="absolute -top-6 -right-3 h-12 w-12 rounded-full bg-pink-600 pt-3 text-center text-white"
-              >NEW</span
-            >
-            <img
-              class="h-48 w-96 object-cover"
-              src="../images/dan-gold-tlQebgkU1dI-unsplash.jpg"
-              alt=""
-            />
-          </a>
-        </div>
-        <p class="text-sm font-bold">
-          <span>pazzle</span>
-          <span> / </span>
-          <span>でたらめパズル</span>
-        </p>
-        <p class="font-bold">1000 yen</p>
-        <p class="mt-0 text-sm font-bold md:mt-2">
-          <span>在庫状況</span>
-          <span>残数</span>
-          <span class="text-2xl">3</span>
-        </p>
-      </div>
-      <div class="mb-3 md:mb-0">
-        <div class="relative">
-          <a href="#">
-            <img
-              class="h-48 w-96 object-cover"
-              src="../images/miti-6ZidnWu4h3w-unsplash.jpg"
-              alt=""
-            />
-          </a>
-        </div>
-        <p class="text-sm font-bold">
-          <span>pazzle</span>
-          <span> / </span>
-          <span>でたらめパズル</span>
-        </p>
-        <p class="font-bold">1000 yen</p>
-        <p class="mt-0 text-sm font-bold md:mt-2">
-          <span>在庫状況</span>
-          <span>残数</span>
-          <span class="text-2xl">3</span>
-        </p>
-      </div>
+      <tg-component name="product">
+        <tg-insert name="new-badge"><tg-component name="new-badge"></tg-component></tg-insert>
+        <tg-insert name="image">
+          <img
+            class="h-48 w-96 object-cover"
+            src="/images/dan-gold-tlQebgkU1dI-unsplash.jpg"
+            alt=""
+          />
+        </tg-insert>
+        <tg-insert name="product-category">食器</tg-insert>
+        <tg-insert name="product-name">カップ</tg-insert>
+        <tg-insert name="product-price">800</tg-insert>
+        <tg-insert name="product-stock">10</tg-insert>
+      </tg-component>
+      <tg-component name="product">
+        <tg-insert name="image">
+          <img
+            class="h-48 w-96 object-cover"
+            src="/images/miti-6ZidnWu4h3w-unsplash.jpg"
+            alt=""
+          />
+        </tg-insert>
+        <tg-insert name="product-category">食器</tg-insert>
+        <tg-insert name="product-name">お皿</tg-insert>
+        <tg-insert name="product-price">1200</tg-insert>
+        <tg-insert name="product-stock">5</tg-insert>
+      </tg-component>
     </div>
   </div>
   <!-- Workshop -->
