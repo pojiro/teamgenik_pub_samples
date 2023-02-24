@@ -9,14 +9,14 @@
     </a>
   </div>
   <p class="text-sm font-bold">
-    <span>pazzle</span>
+    <span><tg-slot name="product-category"></tg-slot></span>
     <span> / </span>
-    <span>でたらめパズル</span>
+    <span><tg-slot name="product-name"></tg-slot></span>
   </p>
-  <p class="font-bold">1000 yen</p>
+  <p class="font-bold"><tg-slot name="product-price"></tg-slot> yen</p>
   <p class="mt-0 text-sm font-bold md:mt-2">
     <span>在庫状況</span>
     <span>残数</span>
-    <span class="text-2xl">3</span>
+    <span class="text-2xl"><tg-slot name="product-stock"></tg-slot></span>
   </p>
 </div>
