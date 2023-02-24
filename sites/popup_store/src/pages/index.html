@@ -10,7 +10,15 @@ title: kenko
     <p class="mb-4 font-bold tracking-widest">グッズ販売</p>
     <hr />
     <div class="mt-14 grid justify-items-center md:grid-cols-3 md:gap-6">
-      <tg-component name="product"></tg-component>
+      <tg-component name="product">
+        <tg-insert name="image">
+          <img
+            class="h-48 w-96 object-cover"
+            src="/images/mel-poole-i6NcIJXdK10-unsplash.jpg"
+            alt=""
+          />
+        </tg-insert>
+      </tg-component>
       <div class="mb-3 md:mb-0">
         <div class="relative">
           <a href="#">
