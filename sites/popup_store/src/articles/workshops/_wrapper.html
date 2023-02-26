@@ -1,0 +1,23 @@
+---
+embedded-only: true
+---
+<div class="mb-3 md:mb-0">
+  <div class="relative">
+    <tg-content></tg-content>
+  </div>
+  <p class="text-sm font-bold">
+    <span>workshop</span>
+    <span> / </span>
+    <span>
+      <tg-data name="workshop-date"></tg-data>
+      <span> </span>
+      <tg-data name="workshop-name"></tg-data>
+    </span>
+  </p>
+  <p class="font-bold"><tg-data name="workshop-price"></tg-data> yen</p>
+  <p class="mt-0 text-sm font-bold md:mt-2">
+    <span>予約状況</span>
+    <span>残席</span>
+    <span class="text-2xl"><tg-data name="workshop-stock"></tg-data></span>
+  </p>
+</div>
