@@ -8,49 +8,10 @@ title: kenko
   <div class="mt-16 text-gray-600">
     <h1 class="mb-4 text-3xl font-bold tracking-wide">Products</h1>
     <p class="mb-4 font-bold tracking-widest">グッズ販売</p>
-    <hr />
     <div class="mt-14 grid justify-items-center md:grid-cols-3 md:gap-6">
-      <tg-component name="product">
-        <tg-insert name="new-badge"><tg-component name="new-badge"></tg-component></tg-insert>
-        <tg-insert name="image">
-          <img
-            class="h-48 w-96 object-cover"
-            src="/images/mel-poole-i6NcIJXdK10-unsplash.jpg"
-            alt=""
-          />
-        </tg-insert>
-        <tg-insert name="product-category">pazzle</tg-insert>
-        <tg-insert name="product-name">でたらめパズル</tg-insert>
-        <tg-insert name="product-price">1000</tg-insert>
-        <tg-insert name="product-stock">3</tg-insert>
-      </tg-component>
-      <tg-component name="product">
-        <tg-insert name="new-badge"><tg-component name="new-badge"></tg-component></tg-insert>
-        <tg-insert name="image">
-          <img
-            class="h-48 w-96 object-cover"
-            src="/images/dan-gold-tlQebgkU1dI-unsplash.jpg"
-            alt=""
-          />
-        </tg-insert>
-        <tg-insert name="product-category">食器</tg-insert>
-        <tg-insert name="product-name">カップ</tg-insert>
-        <tg-insert name="product-price">800</tg-insert>
-        <tg-insert name="product-stock">10</tg-insert>
-      </tg-component>
-      <tg-component name="product">
-        <tg-insert name="image">
-          <img
-            class="h-48 w-96 object-cover"
-            src="/images/miti-6ZidnWu4h3w-unsplash.jpg"
-            alt=""
-          />
-        </tg-insert>
-        <tg-insert name="product-category">食器</tg-insert>
-        <tg-insert name="product-name">お皿</tg-insert>
-        <tg-insert name="product-price">1200</tg-insert>
-        <tg-insert name="product-stock">5</tg-insert>
-      </tg-component>
+      <tg-article name="products/detarame"></tg-article>
+      <tg-article name="products/cup"></tg-article>
+      <tg-article name="products/plate"></tg-article>
     </div>
   </div>
   <!-- Workshop -->
