@@ -1,0 +1,21 @@
+---
+embedded-only: true
+---
+<div class="mx-2 border-b-4 border-gray-100 px-4 pt-2 md:border-b-0">
+  <p class="text-center">
+    <span><tg-data name="calendar-month"></tg-data></span>
+    <span>／</span>
+    <span><tg-data name="calendar-day"></tg-data></span>
+  </p>
+  <!-- content is an icon -->
+  <p class="pt-2 text-center h-12">
+    <tg-content></tg-content>
+  </p>
+  <p class="text-center text-xs h-4">
+    <tg-if-complete>
+      <span><tg-data name="from-hour"></tg-data></span>
+      <span>〜</span>
+      <span><tg-data name="to-hour"></tg-data></span>
+    </tg-if-complete>
+  </p>
+</div>
