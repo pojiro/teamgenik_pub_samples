@@ -2,39 +2,9 @@
 title: kenko
 ---
 <div class="p-6">
-  <tg-component name="hero"></tg-component>
-
-  <!-- Products -->
-  <div class="mt-16 text-gray-600">
-    <h1 class="mb-4 text-3xl font-bold tracking-wide">Products</h1>
-    <p class="mb-4 font-bold tracking-widest">グッズ販売</p>
-    <div class="mt-14 grid justify-items-center md:grid-cols-3 md:gap-6">
-      <tg-article name="products/detarame"></tg-article>
-      <tg-article name="products/cup"></tg-article>
-      <tg-article name="products/plate"></tg-article>
-    </div>
-  </div>
-  <!-- Workshop -->
-  <div class="mt-16 text-gray-600">
-    <h1 class="mb-4 text-3xl font-bold tracking-wide">Workshop</h1>
-    <p class="mb-4 font-bold tracking-widest">ワークショップ予約受付状況</p>
-    <div class="mt-14 grid justify-items-center md:grid-cols-3 md:gap-6">
-      <tg-article name="workshops/pencils"></tg-article>
-      <tg-article name="workshops/diy"></tg-article>
-      <tg-article name="workshops/leaves"></tg-article>
-    </div>
-  </div>
-  <!-- form -->
-  <div class="my-16 flex justify-center">
-    <button class="border-2 border-gray-400 px-12 py-4 text-gray-800">
-      グッズ／ワークショップ予約 <br class="md:hidden" />
-      問い合わせフォーム
-    </button>
-  </div>
+  <tg-segment name="hero"></tg-segment>
+  <tg-segment name="index/products"></tg-segment>
+  <tg-segment name="index/workshop"></tg-segment>
+  <tg-segment name="index/form"></tg-segment>
 </div>
-<!-- dates -->
-<div class="flex justify-center bg-gray-300 py-4">
-  <div class="grid grid-cols-3 md:grid-cols-7">
-    <tg-articles pattern="calendar/*" order-by="index:asc"></tg-articles>
-  </div>
-</div>
+<tg-segment name="index/calendar"></tg-segment>
