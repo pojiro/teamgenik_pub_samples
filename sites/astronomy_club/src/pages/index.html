@@ -3,46 +3,7 @@ title: TG高校 天文部
 ---
 
 <div class="container mx-auto xl:max-w-screen-xl">
-  <div class="mx-8">
-    <div class="mb-4 flex items-center justify-center gap-4 md:gap-6">
-      <div class="flex w-16 flex-shrink-0 items-center justify-center md:w-20">
-        <img src="/images/star.svg" alt="" />
-      </div>
-      <div>
-        <h2
-          class="mb-2 text-center text-2xl font-thin text-indigo-300 md:text-4xl"
-        >
-          イベントカレンダー
-        </h2>
-      </div>
-    </div>
-    <div class="mb-8 text-center text-base leading-7">
-      <p>星と仲間と過ごす天文部の一年間のイベントです。</p>
-      <p>
-        毎月注目の星を見る楽しい観望会が一番盛り上がるのは、合宿観望会。今年の観望会はどこで星空をみようか。
-      </p>
-      <p>他校との交流会や文化祭での発表会も楽しみにしてください。</p>
-    </div>
-  </div>
-  <div
-    class="mx-3 mb-20 flex justify-center rounded-2xl border border-solid border-teal-400 bg-white px-4 py-10"
-  >
-    <div>
-      <div class="mb-6">
-        <h2 class="text-center text-xl font-bold text-gray-700 md:text-left">
-          ■今月観測する星
-        </h2>
-      </div>
-      <div
-        class="grid w-[300px] grid-cols-2 gap-x-4 gap-y-8 text-gray-600 md:w-[640px] md:grid-cols-6"
-      >
-        <tg-articles
-          pattern="events/month-*"
-          order-by="index:asc"
-        ></tg-articles>
-      </div>
-    </div>
-  </div>
+  <tg-segment name="event-calendar"></tg-segment>
 </div>
 
 <div class="container mx-auto xl:max-w-screen-xl">
